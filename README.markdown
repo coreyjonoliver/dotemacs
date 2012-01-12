@@ -2,7 +2,7 @@ dotemacs
 ================================================================
 Corey Oliver, 2012
 
-My emacs configuration. The layour is modeled after Mike
+My emacs configuration. The layout is modeled after Mike
 Douglas's [dotemacs][1].
 
 Usage
@@ -21,12 +21,12 @@ submodule init; git submodule update`.
 Layout
 -----------
 
-*   `custom` - personal customizations.
-**    `my-buffers.el` - 
-**    `my-keys.el` -
-**    `my-misc.el` -
-**    `my-modes.el` -
-**    `my-ui.el` -
+*   `custom` - personal customizations.    
+    *   `my-buffers.el` - buffer preferences.
+    *   `my-keys.el` - key bindings.
+    *   `my-misc.el` - custom settings which don't neatly fit anywhere else.
+    *   `my-modes.el` - mode preferences.
+    *   `my-ui.el` - user-interface settings, such as the default color-theme and font.
 *   `utilities` - useful miscellaneous functions.
 *   `vendor` - third-party plug-ins.
 

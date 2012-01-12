@@ -24,7 +24,7 @@
 
 ;; latex (AUCTeX LaTex mode)
 ;;;; compile latex files to pdf by default
-(TeX-PDF-mode t)
+(setq TeX-PDF-mode t)
 
 ;;;; activate reftex
 (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
