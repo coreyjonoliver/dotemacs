@@ -11,11 +11,11 @@ Usage
 Create a `.emacs` or `_emacs` file in your home directory with the
 following contents:
 
-       (setq load-path (cons "~/emacs.d" load-path))
+       (setq load-path (cons "~/.emacs.d" load-path))
        (load "init")
 
-Check out this repository into the directory `~/emacs.d` and pull in
-the git sub-modules using the following command in `~/emacs.d`: `git
+Check out this repository into the directory `~/.emacs.d` and pull in
+the git sub-modules using the following command in `~/.emacs.d`: `git
 submodule init; git submodule update`.
 
 Layout
