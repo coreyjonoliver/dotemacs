@@ -52,3 +52,7 @@
   "Major mode for editing Scala files." t)
 (add-to-list 'auto-mode-alist '("\\.scala$" . scala-mode))
 
+;; php
+(autoload 'php-mode "php-mode"
+  "Major mode for editing PHP files." t)
+(add-to-list 'auto-mode-alist '("\\.php$" . php-mode))

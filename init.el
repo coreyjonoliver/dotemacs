@@ -29,5 +29,6 @@
 (vendor 'markdown-mode)
 (vendor 'scala-mode)
 (vendor 'tuareg)
+(vendor 'php-mode)
 
 (load-directory "~/.emacs.d/custom")

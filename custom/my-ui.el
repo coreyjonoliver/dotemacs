@@ -51,4 +51,7 @@
 ;; set frame size
 (add-to-list 'default-frame-alist '(height . 65))
 
+;; show column number
+(setq column-number-mode t)
+
 (provide 'my-ui)
