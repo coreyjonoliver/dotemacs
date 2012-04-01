@@ -40,7 +40,7 @@
 ;; system fonts are available in emacs as of version 23
 (if (>= emacs-major-version 23)
     (set-face-attribute 'default nil
-			:family "Inconsolata" :height 120))
+			:family "Inconsolata" :height 190))
 
 ;; setup color-theme
 (require 'color-theme)
