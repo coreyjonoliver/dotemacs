@@ -40,8 +40,10 @@
 ;; system fonts are available in emacs as of version 23
 (if (>= emacs-major-version 23)
     (set-face-attribute 'default nil
-                        :family "Inconsolata" :height 100)) ;; 1440 x 900
-			;; :family "Inconsolata" :height 190)) ;; ?
+                        :family "Inconsolata" :height
+                        ;; set the font height to the current
+                        ;; resolution height divided by 10
+                        (/ (x-display-pixel-height) 10))) 
 
 ;; setup color-theme
 (require 'color-theme)
@@ -50,7 +52,7 @@
 (color-theme-inkpot)
 
 ;; set frame size
-(add-to-list 'default-frame-alist '(height . 65))
+(add-to-list 'default-frame-alist '(height . 40))
 
 ;; show column number
 (setq column-number-mode t)
