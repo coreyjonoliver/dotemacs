@@ -43,7 +43,7 @@
                         :family "Inconsolata" :height
                         ;; set the font height to the current
                         ;; resolution height divided by 10
-                        (/ (x-display-pixel-height) 10))) 
+                        (/ (x-display-pixel-height) 8))) 
 
 ;; setup color-theme
 (require 'color-theme)
