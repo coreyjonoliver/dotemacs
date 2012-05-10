@@ -18,7 +18,6 @@
 
 ;; make text-mode the default
 (setq default-major-mode 'org-mode)
-(add-hook 'text-mode-hook 'longlines-mode)
 (add-hook 'text-mode-hook 'turn-on-visual-line-mode)
 
 
@@ -33,6 +32,10 @@
 ;;;; set up ispell to work with latex
 (add-hook 'Latex-mode-hook (function (lambda () (setq ispell-parser 'tex))))
 
+;; haskell
+(load "haskell-site-file")
+(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
 
 ;; markdown
 (autoload 'markdown-mode "markdown-mode"
@@ -40,10 +43,9 @@
 (add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown$" . markdown-mode))
 
-
 ;; ocaml
 (autoload 'tuareg-mode "tuareg"
-  "Major mode for editing Caml files" t)
+  "Major mode for editing Caml files." t)
 (add-to-list 'auto-mode-alist '("\\.ml[ily]?$" . tuareg-mode))
 (add-to-list 'auto-mode-alist'("\\.topml$" . tuareg-mode))
 
