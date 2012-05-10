@@ -3,3 +3,6 @@
 	url = git://jblevins.org/git/markdown-mode.git
 
 
+[submodule "vendor/haskell-mode"]
+	path = vendor/haskell-mode
+	url = https://github.com/haskell/haskell-mode
