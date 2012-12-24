@@ -5,11 +5,9 @@
 [submodule "vendor/haskell-mode"]
 	path = vendor/haskell-mode
 	url = https://github.com/haskell/haskell-mode
-
 [submodule "vendor/scala-mode2"]
-        path = vendor/scala-mode2
-        url = https://github.com/hvesalai/scala-mode2.git
-
+	path = vendor/scala-mode2
+	url = https://github.com/hvesalai/scala-mode2.git
 [submodule "vendor/ensime"]
-        path = vendor/ensime
-        url = https://github.com/aemoncannon/ensime.git
+	path = vendor/ensime
+	url = https://github.com/aemoncannon/ensime.git

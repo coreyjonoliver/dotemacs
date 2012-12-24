@@ -31,5 +31,7 @@
 (vendor 'tuareg)
 (vendor 'php-mode)
 (vendor 'haskell-mode)
+(vendor 'scala-mode2)
+(vendor 'ensime)
 
 (load-directory "~/.emacs.d/custom")

@@ -49,9 +49,11 @@
 (add-to-list 'auto-mode-alist'("\\.topml$" . tuareg-mode))
 
 ;; scala
-(autoload 'scala-mode-auto "scala-mode-auto"
-  "Major mode for editing Scala files." t)
-(add-to-list 'auto-mode-alist '("\\.scala$" . scala-mode))
+(autoload 'scala-mode2 "scala-mode2")
+
+;; ensime
+(autoload 'ensime "ensime")
+(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
 
 ;; php
 (autoload 'php-mode "php-mode"
