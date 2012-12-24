@@ -20,7 +20,6 @@
 (setq default-major-mode 'org-mode)
 (add-hook 'text-mode-hook 'turn-on-visual-line-mode)
 
-
 ;; latex (AUCTeX LaTex mode)
 ;;;; compile latex files to pdf by default
 (setq TeX-PDF-mode t)
