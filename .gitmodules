@@ -8,6 +8,3 @@
 [submodule "vendor/scala-mode2"]
 	path = vendor/scala-mode2
 	url = https://github.com/hvesalai/scala-mode2.git
-[submodule "vendor/ensime"]
-	path = vendor/ensime
-	url = https://github.com/aemoncannon/ensime.git
