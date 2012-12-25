@@ -20,18 +20,16 @@
 (add-to-list 'load-path "~/.emacs.d/utilities")
 (add-to-list 'load-path "~/.emacs.d/vendor")
 
-(load-file "~/.emacs.d/load-directory.el")
+(load "load-directory.el")
+(mapc 'load-directory '("~/.emacs.d/utilities"))
 
-(load-directory "~/.emacs.d/utilities")
+(mapc 'vendor '(color-theme
+                color-theme-extras
+                markdown-mode
+                tuareg
+                php-mode
+                haskell-mode
+                scala-mode2))
 
-(vendor 'color-theme)
-(vendor 'color-theme-extras)
-(vendor 'markdown-mode)
-(vendor 'scala-mode)
-(vendor 'tuareg)
-(vendor 'php-mode)
-(vendor 'haskell-mode)
-(vendor 'scala-mode2)
-(vendor 'ensime)
+(mapc 'load-directory '("~/.emacs.d/custom"))
 
-(load-directory "~/.emacs.d/custom")

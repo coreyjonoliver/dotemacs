@@ -14,9 +14,9 @@ following contents:
        (setq load-path (cons "~/.emacs.d" load-path))
        (load "init")
 
-Check out this repository into the directory `~/.emacs.d` and pull in
-the git sub-modules using the following command in `~/.emacs.d`: `git
-submodule init; git submodule update`.
+Check out this repository into the directory `~/.emacs.d` with the following command:
+
+       git clone --recursive <repository> ~/.emacs.d
 
 Layout
 -----------

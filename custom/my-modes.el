@@ -51,7 +51,8 @@
 ;; scala
 (autoload 'scala-mode2 "scala-mode2")
 
-;; ensime
+;; ENSIME
+(add-to-list 'load-path "~/.emacs.d/vendor/ensime/elisp")
 (autoload 'ensime "ensime")
 (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
 
