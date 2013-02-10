@@ -28,8 +28,10 @@
                 markdown-mode
                 tuareg
                 php-mode
-                haskell-mode
-                scala-mode2))
+                haskell-mode))
+
+(if (>= emacs-major-version 24)
+    (mapc 'vendor '(scala-mode2)))
 
 (mapc 'load-directory '("~/.emacs.d/custom"))
 

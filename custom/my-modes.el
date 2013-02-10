@@ -49,8 +49,7 @@
 (add-to-list 'auto-mode-alist'("\\.topml$" . tuareg-mode))
 
 ;; scala
-(if (= emacs-major-version > 23)
-  (autoload 'scala-mode2 "scala-mode2"))
+(autoload 'scala-mode2 "scala-mode2")
 
 ;; ENSIME
 (add-to-list 'load-path "~/.emacs.d/vendor/ensime/elisp")
