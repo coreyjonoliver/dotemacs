@@ -32,7 +32,7 @@
 (add-hook 'Latex-mode-hook (function (lambda () (setq ispell-parser 'tex))))
 
 ;; haskell
-(load "haskell-site-file")
+(require 'haskell-mode-autoloads)
 (add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
 

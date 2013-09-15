@@ -30,8 +30,13 @@
  (lambda (p)
    (unless (package-installed-p p)
      (package-install p)))
- '(go-autocomplete
+ '(color-theme
+   go-autocomplete
    go-mode
+   haskell-mode
+   markdown-mode
+   php-mode
+   scala-mode2
    ))
 
 ;; Customize auto-complete
@@ -46,14 +51,9 @@
 (load "load-directory.el")
 (mapc 'load-directory '("~/.emacs.d/utilities"))
 
-(mapc 'vendor '(color-theme
-                color-theme-extras
-                markdown-mode
+(mapc 'vendor '(
+                ;;color-theme-extras
                 tuareg
-                php-mode
-                haskell-mode
-                scala-mode2
-                go-mode
                 ))
 
 (mapc 'load-directory '("~/.emacs.d/custom"))
