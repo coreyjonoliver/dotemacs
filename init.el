@@ -16,6 +16,29 @@
 ;; TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 ;; PERFORMANCE OF THIS SOFTWARE.
 
+;; Install desired packages
+(require 'package)
+
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
+(package-initialize)
+(unless package-archive-contents
+  (package-refresh-contents))
+
+(mapc
+ (lambda (p)
+   (unless (package-installed-p p)
+     (package-install p)))
+ '(go-autocomplete
+   go-mode
+   ))
+
+;; Customize auto-complete
+(require 'auto-complete-config)
+(ac-config-default)
+(add-to-list 'ac-modes 'go-mode)
+
 (add-to-list 'load-path "~/.emacs.d/custom")
 (add-to-list 'load-path "~/.emacs.d/utilities")
 (add-to-list 'load-path "~/.emacs.d/vendor")
@@ -29,7 +52,12 @@
                 tuareg
                 php-mode
                 haskell-mode
-                scala-mode2))
+                scala-mode2
+                go-mode
+                ))
 
 (mapc 'load-directory '("~/.emacs.d/custom"))
+
+
+ 
 

@@ -60,3 +60,9 @@
 (autoload 'php-mode "php-mode"
   "Major mode for editing PHP files." t)
 (add-to-list 'auto-mode-alist '("\\.php$" . php-mode))
+
+;; go
+(autoload 'go-mode "go-mode"
+  "Major mode for editing Go files." t)
+(autoload 'go-auto-complete "go-autocomplete")
+(add-to-list 'auto-mode-alist '("\\.go$" . go-mode))
