@@ -36,14 +36,9 @@
 (setq visible-bell t)
 
 ;; set default font
-
-;; system fonts are available in emacs as of version 23
-(if (>= emacs-major-version 23)
-    (set-face-attribute 'default nil
-                        :family "Inconsolata" :height
-                        ;; set the font height to the current
-                        ;; resolution height divided by 10
-                        (/ (x-display-pixel-height) 8))) 
+(when (eq system-type 'darwin)
+ (set-default-font
+     "-apple-inconsolata-medium-r-normal--13-130-72-72-m-130-iso10646-1"))
 
 ;; setup color-theme
 (require 'color-theme)

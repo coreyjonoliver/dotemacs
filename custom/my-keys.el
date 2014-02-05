@@ -16,6 +16,9 @@
 ;; TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 ;; PERFORMANCE OF THIS SOFTWARE.
 
+(when (eq system-type 'darwin)
+  (setq mac-command-modifier 'meta))
+
 ;; use the clipboard when killing or yanking text
 (global-set-key "\C-w" 'clipboard-kill-region)
 (global-set-key "\M-w" 'clipboard-kill-ring-save)

@@ -16,6 +16,9 @@
 ;; TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 ;; PERFORMANCE OF THIS SOFTWARE.
 
+;; Uncomment the following line to allow for debugging
+;(setq debug-on-error t)
+
 ;; Install desired packages
 (require 'package)
 
@@ -44,11 +47,10 @@
 (ac-config-default)
 (add-to-list 'ac-modes 'go-mode)
 
-(add-to-list 'load-path "~/.emacs.d/custom")
-(add-to-list 'load-path "~/.emacs.d/utilities")
+(add-to-list 'load-path "~/.emacs.d")
 (add-to-list 'load-path "~/.emacs.d/vendor")
 
-(load "load-directory.el")
+(require 'load-directory)
 (mapc 'load-directory '("~/.emacs.d/utilities"))
 
 (mapc 'vendor '(
